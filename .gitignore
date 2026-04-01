@@ -1,0 +1,21 @@
+# .NET compiled files 
+backend/bin/
+backend/obj/
+
+# Node modules 
+frontend/node_modules/
+frontend/dist/
+
+# SQLite database file 
+*.db
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+
+# macOS system files
+.DS_Store
+
+# Environment files with secrets
+*.env
