@@ -141,7 +141,7 @@ public class HapScraperService : IScraperService
             // PRICE: <p class="price_color">£51.77</p>
             var priceNode = bookNode.SelectSingleNode(".//p[@class='price_color']");
             var priceText = priceNode?.InnerText.Trim() ?? "£0.00";
-            var price = decimal.Parse(
+            var price = double.Parse(
                 priceText.Replace("£", "").Replace("Â", ""),
                 System.Globalization.CultureInfo.InvariantCulture
             );

@@ -3,9 +3,9 @@ namespace BookScraper.Models;
 public class BookAnalytics
 {
     public int TotalBooks { get; set; }
-    public decimal AveragePrice { get; set; }
-    public decimal MinPrice { get; set; }
-    public decimal MaxPrice { get; set; }
+    public double AveragePrice { get; set; }
+    public double MinPrice { get; set; }
+    public double MaxPrice { get; set; }
     public double AverageRating { get; set; }
     public int InStockCount { get; set; }
     public int OutOfStockCount { get; set; }
@@ -17,7 +17,7 @@ public class RatingGroup
 {
     public int Rating { get; set; }
     public int Count { get; set; }
-    public decimal AveragePrice { get; set; }
+    public double AveragePrice { get; set; }
 }
 
 public class PriceRange
@@ -29,7 +29,7 @@ public class PriceRange
 public class BookDeal
 {
     public Book Book { get; set; } = null!;
-    public decimal ValueScore { get; set; }
+    public double ValueScore { get; set; }
     public string DealReason { get; set; } = string.Empty;
 }
 

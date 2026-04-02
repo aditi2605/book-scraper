@@ -145,7 +145,7 @@ public class PlaywrightScraperService : IScraperService
 
             var priceElement = await element.QuerySelectorAsync(".price_color");
             var priceText = (await priceElement!.InnerTextAsync()).Trim();
-            var price = decimal.Parse(
+            var price = double.Parse(
                 priceText.Replace("£", "").Replace("Â", ""),
                 System.Globalization.CultureInfo.InvariantCulture
             );

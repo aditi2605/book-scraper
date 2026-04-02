@@ -4,7 +4,7 @@ public class Book
 {
     public int Id { get; set; }                                 // Primary key (auto-generated)
     public string Title { get; set; } = string.Empty;           // Book title
-    public decimal Price { get; set; }                          // Price as a number (e.g. 51.77)
+    public double Price { get; set; }                          // Price as a number (e.g. 51.77)
     public string PriceDisplay { get; set; } = string.Empty;    // Price as text (e.g. "£51.77")
     public int Rating { get; set; }                             // 1-5 stars
     public bool InStock { get; set; }                           // Is it available?
